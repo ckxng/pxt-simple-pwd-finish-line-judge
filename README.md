@@ -1,4 +1,4 @@
-# pxt-simple-2-lane-pwd-finish-line ![Build status badge](https://github.com/ckxng/pxt-simple-2-lane-pwd-finish-line/workflows/MakeCode/badge.svg)
+# pxt-simple-2-lane-pwd-finish-line ![Build status badge](https://github.com/ckxng/pxt-simple-pwd-finish-line-judge/workflows/MakeCode/badge.svg)
 
 ## Description
 
@@ -7,7 +7,6 @@ This is a cheap and simple finish line judge for a two-lane pinewood derby track
 Photovoltaic sensors are installed into holes drilled into the center of each lane, and a light or LED is placed directly overhead of each sensor.  Once a car's shadow passes over one of the sensors (causing the sensed light to dim by 50%), that car will be declared the winner.  The pixel will repeatedly flash blue to indicate the winner  ("blink, 2s pause, repeat" for lane 1; "blink, blink, 2s pause, repeat" for lane 2).  Press the reset button to recalibrate and prepare for the next race.
 
 This project was done using MakeCode to demonstrate to Cub Scouts that electronics can be useful and FUN!
-
 
 ## Use this extension
 
@@ -30,14 +29,32 @@ To edit this repository in MakeCode.
 
 This section shows the blocks code from the last commit in master.
 
-![A rendered view of the blocks](https://github.com/ckxng/pxt-simple-2-lane-pwd-finish-line/raw/master/.makecode/blocks.png)
+![A rendered view of the blocks](https://github.com/ckxng/pxt-simple-pwd-finish-line-judge/raw/master/.makecode/blocks.png)
 
 ## Wiring Preview
 
 This section shows the generated wiring preview:
 
-![A rendered view of the wiring](https://github.com/ckxng/pxt-simple-2-lane-pwd-finish-line/raw/master/.makecode/wiring.png)
+![A rendered view of the wiring](https://github.com/ckxng/pxt-simple-pwd-finish-line-judge/raw/master/.makecode/wiring.png)
 
+## Adding a Lane
+
+A lane can be added by editing two functions in the block editor.  Review the following function:
+
+    function lightSensorRead
+      set lightSensorCurrent to 
+        (array of 
+          (analog read pin A1)
+          (analog read pin A2))
+
+Change it to:
+
+    function lightSensorRead
+      set lightSensorCurrent to 
+        (array of 
+          (analog read pin A1)
+          (analog read pin A2)
+          (analog read pin A3))
 
 ## Supported targets
 
