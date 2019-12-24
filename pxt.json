@@ -1,0 +1,20 @@
+{
+    "name": "Simple 2-Lane PWD Finish Line",
+    "dependencies": {
+        "adafruit-feather-m0-express": "*",
+        "lightsensor": "*",
+        "infrared": "*",
+        "light-spectrum-sensor": "*"
+    },
+    "description": "",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "preferredEditor": "blocksprj",
+    "testFiles": [
+        "test.ts"
+    ]
+}
