@@ -25,7 +25,10 @@ function lightSensorRead () {
     lightSensorCurrent = [pins.A1.analogRead(), pins.A2.analogRead()]
 }
 function lightCalibrate () {
-    lightThresholdMin = [1023, 1023]
+    lightSensorRead()
+    for (let index = 0; index <= lightSensorCurrent.length - 1; index++) {
+        lightThresholdMin.insertAt(index, 1023)
+    }
     console.log("calibrate")
     millisStartCalibrate = control.millis()
     while (control.millis() < millisStartCalibrate + 2000) {
