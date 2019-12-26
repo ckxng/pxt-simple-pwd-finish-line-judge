@@ -33,6 +33,8 @@ This section shows the blocks code from the last commit in master.
 
 ## Wiring Preview
 
+> A note on wiring: There is ample space in the prototyping area on the board to add the resistors for the photovoltaic sensors directly to the board.  Once that is done, the photovoltaic sensors would only need three wires to be sent to the bottom of the track, and those would fit (with a wire to spare) in an RJ-11 plug.  Taking such an approach could make assembly that much easier.  How this is implemented specifically will depend on the plysical layout of the track and board placement, but it is something to consider when drawing up the build plans.
+
 This section shows the generated wiring preview:
 
 ![A rendered view of the wiring](https://github.com/ckxng/pxt-simple-pwd-finish-line-judge/raw/master/.makecode/wiring.png)
