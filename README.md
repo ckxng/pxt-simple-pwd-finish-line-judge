@@ -39,7 +39,7 @@ This section shows the generated wiring preview:
 
 ## Adding a Lane
 
-A lane can be added by editing two functions in the block editor.  Review the following function:
+A lane can be added by editing this function in the block editor:
 
     function lightSensorRead
       set lightSensorCurrent to 
